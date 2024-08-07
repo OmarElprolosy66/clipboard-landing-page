@@ -1,6 +1,6 @@
 # Clipboard Landing Page
 
-![Clipboard Landing Page](./README-files/127.0.0.1_5500_%20(1).png)
+![Clipboard Landing Page](./README-files/127.0.0.1_5500_%20(3).png)
 
 **Clipboard Landing Page** is a responsive web application that provides a beautifully designed interface for showcasing Clipboard's features and capabilities. This project is built using HTML, CSS, and JavaScript, following modern web development practices to ensure an engaging user experience.
 
