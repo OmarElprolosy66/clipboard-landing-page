@@ -12,7 +12,6 @@
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
-- [Contact](#contact)
 
 ## Features
 
