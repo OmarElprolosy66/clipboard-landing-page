@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+/*==============================
+========= Global style =========
+===============================*/
+
+:root {
+  /* Colors*/
+  --clr-cyan: hsl(171, 66%, 44%);
+  --clr-blue: hsl(233, 100%, 69%);
+
+  /*Neutral */
+  --clr-neutral-200: hsl(201, 11%, 66%);
+  --clr-neutral-400: hsl(210, 10%, 33%);
+
+  /* Fonts */
+  --ff-sans: "Bai Jamjuree", sans-serif;
+
+  --fw-normal: 400;
+  --fw-bold: 600;
+
+  --fs-400: 0.9275rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.625rem;
+  --fs-800: 1.875rem;
+  --fs-900: 2.5rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-normal);
+  line-height: 1.7;
+  color: var(--clr-neutral-200);
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cyan-btn a,
+.blue-btn a {
+  --white: #fdfdfd;
+  color: var(--white);
+}
+
+.cyan-btn a:hover,
+.blue-btn a:hover {
+  opacity: 0.72;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  color: var(--clr-neutral-400);
+  margin-bottom: 0.7rem;
+  font-weight: var(--fw-bold);
+}
+
+h1 {
+  font-size: var(--fs-900);
+}
+
+h2 {
+  font-size: var(--fs-800);
+}
+
+h3 {
+  font-size: var(--fs-500);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.cyan-btn,
+.blue-btn {
+  --fs-450: 1rem;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-450);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+  padding: 0.6rem 4rem;
+  border-radius: 3rem;
+  flex: 1;
+}
+
+.cyan-btn {
+  --btn-cyan-shadow: hsl(171, 66%, 60%);
+  background-color: var(--clr-cyan);
+  box-shadow: 0px 10px 27px -12px var(--btn-cyan-shadow);
+}
+
+.blue-btn {
+  --btn-blue-shadow: hsl(233, 100%, 90%);
+  background-color: var(--clr-blue);
+  box-shadow: 0px 10px 27px -12px var(--btn-blue-shadow);
+}
+
+.cyan-btn:hover,
+.blue-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 30px -12px var(--btn-cyan-shadow);
+}
+
+/*==============================
+============ Header ============
+===============================*/
+
+header {
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 6rem;
+  max-width: 100vw;
+}
+
+.logo img {
+  max-height: 8rem;
+  max-width: 100%;
+}
+
+.logo {
+  margin-bottom: 1.5rem;
+}
+
+.header-container {
+  display: grid;
+  place-items: center;
+  grid-gap: 1rem;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: columns;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-block: 2rem;
+  margin-inline: 3rem;
+  gap: 2rem;
+}
+
+.header-text h1 {
+  margin-bottom: -0.6rem;
+  letter-spacing: 0.08rem;
+}
+
+.header-text p {
+  max-width: 20rem;
+}
+
+/*==============================
+======= Details section ========
+===============================*/
+
+.details,
+.more,
+.brands-logos {
+  display: grid;
+  place-items: center;
+  margin-block: 8rem;
+}
+
+.details-text,
+.more-text,
+.workflow-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.details-text p,
+.more-text p .workflow-text p {
+  max-width: 20rem;
+  margin-top: 0.6rem;
+}
+
+.details-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.details-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.cards {
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.cards div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 18rem;
+}
+
+/*==============================
+========= More section =========
+===============================*/
+.more {
+  grid-gap: 4rem;
+}
+
+/*==============================
+======= Workflow section =======
+===============================*/
+.workflow-cards {
+  display: grid;
+  place-items: center;
+  margin-top: 5rem;
+  row-gap: 3rem;
+}
+
+.workflow-cards div {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.workflow-cards p {
+  max-width: 20rem;
+}
+
+.workflow-cards h3 {
+  margin: 2.5rem 0 1rem 0;
+}
+
+/*==============================
+========= brands logos =========
+===============================*/
+.brands-logos {
+  row-gap: 4rem;
+}
+
+/*==============================
+======= clipboard section ======
+===============================*/
+.clipboard .header-text p {
+  margin: 0.3rem 0rem 0.5rem 0;
+}
+
+/*==============================
+============ Footer ============
+===============================*/
+
+footer {
+  --clr-neutral-100: #ffff;
+  background-color: var(--clr-neutral-100);
+}
+
+.footer-logo img {
+  max-height: 4rem;
+}
+
+.footer {
+  display: grid;
+  place-items: center;
+  row-gap: 2.5rem;
+  margin-top: 10rem;
+}
+
+.footer nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-450);
+}
+
+.footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.footer nav ul li a {
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.footer nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--clr-cyan);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.footer nav ul li a:hover {
+  color: var(--clr-cyan);
+}
+
+.footer nav ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.footer-socials img:hover {
+  cursor: pointer;
+}
+
+/*==============================
+========== Responsive ==========
+===============================*/
+
+@media screen and (min-width: 620px) {
+  .btn-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cyan-btn,
+  .blue-btn {
+    padding: 0.6rem 2rem;
+  }
+
+  .header-text p {
+    max-width: 30rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    background-image: url(../images/bg-header-desktop.png);
+  }
+
+  .detail,
+  .more,
+  .brands-logos {
+    margin-block: 7rem;
+  }
+
+  .btn-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cyan-btn,
+  .blue-btn {
+    padding: 0.6rem 2rem;
+  }
+
+  .header-text p {
+    max-width: 35rem;
+  }
+
+  .details-container {
+    margin-top: 5rem;
+    display: flex;
+    width: 100%;
+    gap: 10%;
+  }
+
+  .details-text p {
+    max-width: 38rem;
+  }
+
+  br {
+    display: none;
+  }
+
+  .details-image {
+    width: 60%;
+  }
+
+  .details-image img {
+    max-height: 120%;
+    margin-left: -2rem;
+    margin-top: -1.5rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: -1rem;
+    width: 50%;
+  }
+
+  .cards div {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .more-text p {
+    max-width: 40rem;
+  }
+
+  .more-img img {
+    max-height: 40rem;
+  }
+
+  .workflow-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: -3rem;
+    margin-inline: auto;
+    margin-top: 4rem;
+  }
+
+  .brands-logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .footer {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 30%;
+  }
+
+  .footer nav ul {
+    display: grid;
+    grid-template-columns: [start] 1fr [middle-1] 1fr [middle-2] 1fr [end];
+    row-gap: 1rem;
+    column-gap: 3.4rem;
+  }
+
+  .footer nav ul li:nth-child(3) {
+    grid-area: 1 / middle-1 / middle-2;
+  }
+
+  .footer nav ul li:last-child {
+    grid-area: 1 / middle-2 / end;
+  }
+
+  .footer nav ul li a {
+    font-size: 1.1rem;
+  }
+}
