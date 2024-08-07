@@ -24,7 +24,7 @@
 
 ## Demo
 
-You can view a live demo of the Clipboard Landing Page [here](https://your-live-demo-link.com).
+You can view a live demo of the Clipboard Landing Page [here](https://omarelprolosy66.github.io/clipboard-landing-page/).
 
 ## Installation
 
