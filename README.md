@@ -51,10 +51,6 @@ To run this project locally, follow these steps:
    open index.html
    ```
 
-## Usage
-
-Once you open the `index.html` file in your browser, you'll see the landing page with all its features. You can interact with different elements, such as buttons and links, to explore the page.
-
 ## Technologies Used
 
 - **HTML5**: Semantic markup for a structured and accessible web page.
@@ -107,12 +103,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Frontend Mentor**: Challenge and design inspiration. [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9)
 - **Google Fonts**: Typography. [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
 - **ScrollReveal**: Animation library. [ScrollReveal](https://scrollrevealjs.org/)
-
-
-
-### Instructions:
-- Replace the placeholder `![Clipboard Landing Page](./images/screenshot.png)` with an actual screenshot of your project if you have one.
-- Update the demo link in the **Demo** section with a valid URL pointing to your live project.
-- Add your real email address in the **Contact** section if you'd like to provide an option for contact through email.
-
-Feel free to let me know if there's anything else you'd like to include or modify!
