@@ -1,7 +1,5 @@
 # Clipboard Landing Page
 
-<img src="./README-files/127.0.0.1_5500_%20(3).png" alt="Clipboard Landing Page" width="400">
-
 **Clipboard Landing Page** is a responsive web application that provides a beautifully designed interface for showcasing Clipboard's features and capabilities. This project is built using HTML, CSS, and JavaScript, following modern web development practices to ensure an engaging user experience.
 
 ## Table of Contents
